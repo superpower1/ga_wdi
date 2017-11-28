@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+    var year = new Date();
+    console.log(year.getFullYear());
+
+    myfunc = (year) => {
+      if (year > 2015) {
+        console.log("Greetings from the future!");
+      } else if (year < 2015) {
+        console.log("Whoa! Blast from the past!");
+      } else if (year === 2015) {
+        console.log("I'm in the present!");
+      } else {
+        console.log("year is not a number");
+      }
+    }
+
+    myfunc(year);
+
+  </script>
+</html>
