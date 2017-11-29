@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Top Choices of Color</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let arr = ["white", "black", "red", "blue"];
+
+      console.log("My top choices of color: ");
+      for (var i = 0; i < arr.length; i++) {
+        let suffix = "";
+
+        switch (i+1) {
+          case 1:
+            suffix = "st";
+            break;
+          case 2:
+            suffix = "nd";
+            break;
+          case 3:
+            suffix = "rd";
+            break;
+          default:
+            suffix = "th";
+        }
+
+        console.log(`My ${i+1}${suffix} choice is ${arr[i]}`);
+      }
+    </script>
+  </body>
+</html>
