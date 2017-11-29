@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Guess A Number</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var num = 50;
+      var guess = prompt("Guess A number");
+      var regex = RegExp(/\d/);
+      while (true) {
+        if (!regex.test(guess)) {
+          guess = prompt("Please enter a number!");
+        } else if (num > guess) {
+          guess = prompt("Not exactly, try to guess a bigger number.");
+        } else if(num < guess) {
+          guess = prompt("Not exactly, try to guess a smaller number.");
+        } else {
+          alert("Correct!");
+          break;
+        }
+      }
+    </script>
+  </body>
+</html>
