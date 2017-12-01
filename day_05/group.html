@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Group</title>
+  </head>
+  <body>
+    <button type="button" class="group">Group!</button>
+    <div class="result">
+
+    </div>
+
+    <script type="text/javascript">
+      const people = ["Alex", "James", "Robbie", "Anushka", "Jennifer", "Ross", "Aysa", "Joanna Phillips", "Shane", "Chang", "Johanna Schreiner", "Sheila", "Emma", "Karen", "Sherry", "Ethan", "Mark", "Sophie", "Fouad", "Mia", "Vivien", "Haofu", "Wally"];
+
+      const groupUp = (people, num) => {
+        let groups = [];
+
+        let copy = people.slice(0);
+
+        while (copy.length > 0) {
+          let group = [];
+          for (var i = 0; i < num; i++) {
+            let rand = Math.floor((Math.random() * copy.length));
+            if (copy.length === 0) {
+              break;
+            }
+            group[i] = copy.splice(rand, 1);
+          }
+          groups.push(group);
+        }
+
+        groupOptimise(groups);
+
+        return groups;
+      }
+
+      const groupOptimise = (groups) => {
+        let lastGroup = groups[groups.length - 1];
+        let secondLastGroup = groups[groups.length - 2];
+        if (lastGroup.length < secondLastGroup.length/2) {
+          let joinGroup = secondLastGroup.concat(lastGroup);
+          groups[groups.length - 2] = joinGroup.splice(0, joinGroup.length/2);
+          groups[groups.length - 1] = joinGroup;
+        }
+      }
+
+      const printOutGroups = (groups) => {
+        let output = "";
+
+        for (var i = 0; i < groups.length; i++) {
+          output += `<h2>Group ${i+1}</h2>`;
+          for (var j = 0; j < groups[i].length; j++) {
+            output += `${groups[i][j]}</br>`;
+          }
+          output += "</br>";
+        }
+
+        document.querySelector('.result').innerHTML = output;
+      }
+
+      let num = prompt("How many people in a group? (1-23)");
+      while ((num<1)||(num>people.length)||(isNaN(num))) {
+        num = prompt("Not a valid number, enter a number between 1 and 23 please.");
+      }
+      let groups = groupUp(people, num);
+      console.log(groups);
+      printOutGroups(groups);
+
+      document.querySelector('.group').addEventListener('click', () => {
+        location.reload();
+      });
+    </script>
+  </body>
+</html>

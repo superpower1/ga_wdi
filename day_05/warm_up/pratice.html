@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const printLeapYear = (start, end) => {
+        let leapYear = [];
+        for (var year = start; year <= end; year++) {
+          if (isLeapYear(year)) {
+            leapYear.push(year);
+          }
+        }
+        return leapYear;
+      }
+
+      const isLeapYear = (year) => {
+        return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+      }
+
+      const printMultiples = (start, end, num) => {
+        let result = [];
+        for (var i = start; i <= end; i++) {
+          if (i%num === 0) {
+            result.push(i);
+          }
+        }
+        return result;
+      }
+
+      const printEverySecondOdd = (start, end) => {
+        let result = [];
+        let temp = [];
+        for (var i = start; i <= end; i++) {
+          if (i%2 != 0) {
+            temp.push(i);
+          }
+        }
+        for (var i = 0; i < temp.length; i++) {
+          if (i%2 === 0) {
+            result.push(temp[i]);
+          }
+        }
+        return result;
+      }
+
+      const printPrime = (start, end) => {
+        let result = [];
+        for (var i = start; i <= end; i++) {
+          if (isPrime(i)) {
+            result.push(i);
+          }
+        }
+        return result;
+      }
+
+      const isPrime = (num) => {
+        for(let i = 2; i < num; i++)
+          if(num % i === 0) return false;
+        return num !== 1;
+      }
+
+      console.log(printLeapYear(1987, 2017));
+      console.log(printMultiples(0, 200, 7));
+      console.log(printEverySecondOdd(0, 200));
+      console.log(printPrime(0, 200));
+    </script>
+  </body>
+</html>
