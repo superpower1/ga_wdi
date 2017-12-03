@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Board</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      const createBoard = (symbol, width, height) => {
+        let board = [];
+        let flag = true;
+
+        for (var i = 0; i < height; i++) {
+          if (i%2 != 0) {
+            board += "\n";
+          } else {
+            flag = !flag;
+            for (var j = 0; j < width; j++) {
+              if (flag) {
+                board += ` ${symbol}`;
+              } else {
+                board += `${symbol} `;
+              }
+            }
+            board += "\n";
+          }
+        }
+        return board;
+      }
+      console.log(createBoard("#", 8, 8));
+    </script>
+  </body>
+</html>
