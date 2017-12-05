@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Granny Talk</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      const isUpperCase = (str) => {
+        return str === str.toUpperCase();
+      }
+
+      const swapVowels = (str) => {
+        let vowelsArr = str.match(/[aeiou]/gi);
+        let oldArr = str.split("");
+        let newArr = [];
+
+        for (var i = 0; i < oldArr.length; i++) {
+          let randIndex = Math.floor(Math.random() * vowelsArr.length);
+          if (oldArr[i].match(/[aeiou]/i)) {
+            newArr.push(vowelsArr.splice(randIndex, 1));
+          } else {
+            newArr.push(oldArr[i]);
+          }
+        }
+        return newArr.join("");
+      }
+
+      const grannyTalk = (str) => {
+        if (str === "BYE") {
+          return "What's that honey, I didn't hear you..";
+        } else if (isUpperCase(str)) {
+          let random = Math.round(Math.random() * 20);
+          return `NO, NOT SINCE ${random + 1930}`;
+        } else {
+          return "SPEAK UP SONNY JIM";
+        }
+      }
+
+      const grandpaTalk = (str) => {
+        let response = grannyTalk(str);
+        if (response.match(/^NO, NOT SINCE/)) {
+          let random = Math.round(Math.random() * 20);
+          return `Your granny says "NO, NOT SINCE ${random + 1930}"`;
+        } else {
+          return `Your granny says "${swapVowels(response)}"`;
+        }
+      }
+
+      while (true) {
+        let q = prompt("Talks to granny");
+        console.log(grannyTalk(q));
+        console.log(grandpaTalk(q));
+      }
+    </script>
+  </body>
+</html>

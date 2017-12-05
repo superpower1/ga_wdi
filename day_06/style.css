@@ -1,0 +1,51 @@
+/* descendant */
+article h2 {
+  color: blue;
+}
+
+/* Direct child */
+article > h2 {
+  color: red;
+}
+
+/* Psuedo selector */
+article :last-child {
+
+}
+
+.old {
+  width: 500px;
+  margin: 100px;
+  padding: 100px;
+  border: 5px solid red;
+}
+
+.new {
+  box-sizing: border-box;
+  width: 500px;
+  margin: 100px;
+  padding: 100px;
+  border: 5px solid red;
+}
+
+/* display: inline, block, inline-block */
+.one, .two{
+  /* inline-block has default vertical-align which is bottom */
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  float: left;
+}
+
+.one {
+  width: 60%;
+  border: 1px solid red;
+}
+.two {
+  width: 40%;
+  border: 1px solid red;
+}
+
+.one img {
+  float: left;
+}
