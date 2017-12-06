@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>minigolf</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+      const totalScores = (scores) => console.log(scores.reduce(reducer));
+
+      let bob = [3,2,6,11,9,2,6,9,10];
+      let jimbo = [5,12,9,22,13,7,16,10,11];
+      let fish = [2,2,4,5,4,3,6,4,1];
+      totalScores(bob);
+
+      let par = [3,4,5,5,3,3,4,3,5];
+
+      const performance = (par, scores) => {
+        if (par.length != scores.length) {
+          console.log("Unable to compare");
+          return null;
+        } else {
+          let diffArr = [];
+          for (var i = 0; i < par.length; i++) {
+            total.push(scores[i] - par[i]);
+            if (scores[i] > par[i]) {
+              console.log(`Hole ${i+1}: ${scores[i] - par[i]} strokes worse than par`);
+            } else if (scores[i] === par[i]) {
+              console.log(`Hole ${i+1}: As good as par`);
+            } else {
+              console.log(`Hole ${i+1}: ${par[i] - scores[i]} strokes better than par`);
+            }
+          }
+          return diffArr;
+        }
+      }
+
+      const punt = (bet, player) => total = player.reduce(reducer)*bet;
+
+      console.log(punt(1, performance(par, bob)));
+    </script>
+  </body>
+</html>
