@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cipher</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let code = "NQRZOHGJH LV OLPLWHG. LPDJLQDWLRQ HQFLUFOHV WKH ZRUOG.";
+      let code2 = "ERQXV ILIWHHQ PLQXWHV EUHDN";
+
+      const decodeTalker = (code) => {
+        let charArr = code.split('');
+        let decodedArr = [];
+        charArr.forEach(ele => {
+          if (ele.match(/[A-Za-z]/)) {
+            let realASCii = ele.charCodeAt(0) - 3;
+            let realChar = String.fromCharCode(realASCii);
+            decodedArr.push(realChar);
+          } else {
+            decodedArr.push(ele);
+          }
+        });
+        return decodedArr.join('');
+      }
+
+      const encodeTalker = (msg) => {
+        let charArr = msg.split('');
+        let encodedArr = [];
+        charArr.forEach(ele => {
+          if (ele.match(/[A-Za-z]/)) {
+            let fakeASCii = ele.charCodeAt(0) + 3;
+            let fakeChar = String.fromCharCode(fakeASCii);
+            encodedArr.push(fakeChar);
+          } else {
+            encodedArr.push(ele);
+          }
+        });
+        return encodedArr.join('');
+      }
+
+      let msg = "I am groot";
+      console.log(encodeTalker(msg));
+      console.log(decodeTalker(encodeTalker(msg)));
+    </script>
+  </body>
+</html>
