@@ -45,6 +45,7 @@ body {
   height: 150px;
   border-radius: 50%;
   background-color: lightblue;
+  box-shadow: inset 0 0 20px white;
 }
 
 .flush {
@@ -56,13 +57,16 @@ body {
   0%   {
     width: 150px;
     height: 150px;
+    background-color: lightblue;
   }
   50%  {
     width: 10%;
     height: 10%;
+    background-color: #E0ECF8;
   }
   100% {
     width: 150px;
     height: 150px;
+    background-color: lightblue;
   }
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Walking</title>
+  </head>
+  <body>
+    <div class="frame">
+      <img src="./Walking.gif" alt="" style="position: absolute; left: 0; top: 50px;">
+    </div>
+    <div class="controller" style="width: 100vw;">
+      <button type="button" name="button">start</button>
+      <button type="button" name="button">stop</button>
+    </div>
+
+    <script type="text/javascript">
+      const walkingMan = document.querySelector('.frame').querySelector('img');
+      let walkingLeft = parseInt(walkingMan.style.left);
+      let walkingTop = parseInt(walkingMan.style.top);
+      let towardsLeft = false;
+      let towardsDown = false;
+      const walking = setInterval(() => {
+        if (towardsLeft) {
+          walkingLeft += 20;
+        } else {
+          walkingLeft -= 20;
+        }
+        if (towardsDown) {
+          walkingTop -= 20;
+        } else {
+          walkingTop += 20;
+        }
+        if (walkingLeft > 500) {
+          towardsLeft = !towardsLeft;
+        }
+        if (walkingLeft < 0) {
+          towardsLeft = !towardsLeft;
+        }
+        if (walkingTop > 500) {
+          towardsDown = !towardsDown;
+        }
+        if (walkingTop < 0) {
+          towardsDown = !towardsDown;
+        }
+        walkingMan.style.left = walkingLeft + 'px';
+        walkingMan.style.top = walkingTop + 'px';
+
+      }, 100);
+
+    </script>
+  </body>
+</html>
