@@ -3,43 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Fake Map</title>
+    <link rel="stylesheet" href="./main.css">
   </head>
   <body>
-    <script type="text/javascript">
 
-      const makeFakeMap = (x, y, region, size, mark) => {
-        let regionX, regionY;
-        if (size>x||size>y) {
-          return null;
-        } else {
-          regionX = Math.floor((Math.random() * (x-size)));
-          regionY = Math.floor((Math.random() * (y-size)));
-        }
+    <h1>Find the Treasure</h1>
 
-        let map = [];
-        let randX = Math.floor((Math.random() * size)) + regionX;
-        let randY = Math.floor((Math.random() * size)) + regionY;
+    <div class="position">
+      Your current position: <span></span>
+    </div>
 
-        for (var i = 0; i < x; i++) {
-          let row = [];
-          for (var j = 0; j < y; j++) {
-            if (i>=regionX && i<(regionX+size) && j>=regionY && j<(regionY+size)) {
-              if ((i===randX)&&(j===randY)) {
-                row.push(mark)
-              } else {
-                row.push(region);
-              }
-            } else {
-              row.push('A');
-            }
-          }
-          map.push(row);
-        }
-        return map;
-      }
 
-      console.log(makeFakeMap(5, 5, 'F', 2, 'X'));
+    <div class="hint">
+      You are in the <span></span>
+    </div>
 
+    <div class="buttons">
+      <button class="up">⬆️</button>
+      <button class="down">⬇️</button>
+      <button class="left">⬅️</button>
+      <button class="right">➡️</button>
+    </div>
+
+    <div class="cong">
+
+    </div>
+
+    <script type="text/javascript" src="./app.js">
     </script>
   </body>
 </html>

@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+.table {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.table div{
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}

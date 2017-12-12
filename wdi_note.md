@@ -11,4 +11,9 @@
    ```
    $ python -m SimpleHTTPServer
    ```
-2. 
+
+### DOM
+dir(DOM object) prints out the object
+
+### Consistency of css naming
+use dash, for example: div-container
