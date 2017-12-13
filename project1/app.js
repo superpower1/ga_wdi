@@ -1,7 +1,10 @@
 const tableDiv = document.querySelector('.table');
 const resultDiv = document.querySelector('.result');
 const winnerDiv = document.querySelector('.winner');
+const player = document.querySelector('.player span');
 const table = [];
+let isGameFinished = false;
+let challengeBot = true;
 
 let switchPlayer;
 
@@ -15,11 +18,18 @@ const isAllOjectContentSame = (arr) => {
   });
 }
 
+const highlightWinning = (arr) => {
+  arr.forEach(ele => {
+    ele.style.backgroundColor = "lightgreen";
+  });
+}
+
 const checkTable = (table) => {
   let winner = "";
   table.forEach(row => {
     if (isAllOjectContentSame(row)) {
       winner = row[0].textContent;
+      highlightWinning(row);
     }
   });
   return winner;
@@ -68,15 +78,41 @@ const endOfGame = () => {
   if (winner) {
     winnerDiv.textContent = `Winner is ${winner}`;
     resultDiv.classList.remove('hidden');
-
-    console.log(winner);
+    isGameFinished = true;
   } else if (isAllFilled(table)) {
     winnerDiv.textContent = "Draw Game";
     resultDiv.classList.remove('hidden');
+    isGameFinished = true;
   } else {
 
   }
 
+}
+
+const playerVS = (e) => {
+  if (switchPlayer) {
+    e.target.textContent = 'X';
+    player.textContent = 'O';
+  } else {
+    e.target.textContent = 'O';
+    player.textContent = 'X';
+  }
+  switchPlayer = !switchPlayer;
+
+  endOfGame();
+}
+
+const botVS = (e) => {
+  if (switchPlayer) {
+    easyBot(table, "X");
+    player.textContent = 'O';
+  } else {
+    easyBot(table, "X");
+    player.textContent = 'O';
+  }
+  switchPlayer = !switchPlayer;
+
+  endOfGame();
 }
 
 const init = () => {
@@ -92,15 +128,11 @@ const init = () => {
       row.push(newBlock);
       newBlock.addEventListener('click', e => {
         if (!e.target.textContent) {
-          if (switchPlayer) {
-            e.target.textContent = 'X';
-          } else {
-            e.target.textContent = 'O';
+          playerVS(e);
+          if (challengeBot&&!isGameFinished) {
+            botVS(e);
           }
-          switchPlayer = !switchPlayer;
-        }
-        console.log(`${e.target.textContent}`);
-        endOfGame();
+        }        
       });
       tableDiv.appendChild(newBlock);
     }
@@ -113,9 +145,11 @@ const reset = () => {
   table.forEach(row => {
     row.forEach(item => {
       item.textContent = "";
+      item.style.backgroundColor = "white";
     });
   });
   document.querySelector('.result').classList.add('hidden');
+  isGameFinished = !isGameFinished;
 }
 
 document.querySelector('.reset button').addEventListener('click', reset);
