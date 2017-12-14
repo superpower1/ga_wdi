@@ -16,7 +16,7 @@ h1 {
   padding-bottom: 30px;
 }
 
-.player {
+.info {
   color: white;
   font-size: 20px;
   padding-bottom: 20px;
@@ -121,7 +121,14 @@ body {
 
 .result div{
   width: 100%;
+  font-size: 40px;
+}
+
+.reset button {
+  width: 70px;
+  height: 30px;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 .hidden {

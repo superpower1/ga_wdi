@@ -94,19 +94,26 @@ const playerVS = (e) => {
 
 const botVS = (e) => {
 
-  switch (difficulty) {
-    case "easy":
-      easyBot(table, "X");
-      break;
-    case "hard":
-      upgradeBot(table, "X");
-      break;
-    default:
 
+
+  if (switchPlayer) {
+    if (difficulty==="easy") {
+      easyBot(table, "X");
+    } else if (difficulty==="hard") {
+      upgradeBot(table, "X");
+    }
+    player.textContent = 'O';
+  } else {
+    if (difficulty==="easy") {
+      easyBot(table, "O");
+    } else if (difficulty==="hard") {
+      upgradeBot(table, "O");
+    }
+    player.textContent = 'X';
   }
 
-  // player.textContent = 'O';
-  // switchPlayer = !switchPlayer;
+
+  switchPlayer = !switchPlayer;
 
   endOfGame();
 }
@@ -138,6 +145,7 @@ const init = () => {
 
 const reset = () => {
   switchPlayer = false;
+  player.textContent = "O";
   table.forEach(row => {
     row.forEach(item => {
       item.textContent = "";
@@ -145,7 +153,7 @@ const reset = () => {
     });
   });
   document.querySelector('.result').classList.add('hidden');
-  isGameFinished = !isGameFinished;
+  isGameFinished = false;
 }
 
 document.querySelector('.reset button').addEventListener('click', reset);
