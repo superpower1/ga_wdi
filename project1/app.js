@@ -8,16 +8,6 @@ let challengeBot = true;
 
 let switchPlayer;
 
-const isAllOjectContentSame = (arr) => {
-  const temp = arr[0].textContent;
-  if (!temp) {
-    return false;
-  }
-  return arr.every(ele => {
-    return ele.textContent === temp;
-  });
-}
-
 const highlightWinning = (arr) => {
   arr.forEach(ele => {
     ele.style.backgroundColor = "lightgreen";
@@ -103,13 +93,10 @@ const playerVS = (e) => {
 }
 
 const botVS = (e) => {
-  if (switchPlayer) {
-    easyBot(table, "X");
-    player.textContent = 'O';
-  } else {
-    easyBot(table, "X");
-    player.textContent = 'O';
-  }
+
+  upgradeBot(table, "X");
+  player.textContent = 'O';
+
   switchPlayer = !switchPlayer;
 
   endOfGame();
@@ -132,7 +119,7 @@ const init = () => {
           if (challengeBot&&!isGameFinished) {
             botVS(e);
           }
-        }        
+        }
       });
       tableDiv.appendChild(newBlock);
     }
