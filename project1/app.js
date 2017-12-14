@@ -4,13 +4,13 @@ const winnerDiv = document.querySelector('.winner');
 const player = document.querySelector('.player span');
 const table = [];
 let isGameFinished = false;
-let challengeBot = true;
-
+let challengeBot = false;
+let difficulty = "easy";
 let switchPlayer;
 
 const highlightWinning = (arr) => {
   arr.forEach(ele => {
-    ele.style.backgroundColor = "lightgreen";
+    ele.classList.add("bgGreen");
   });
 }
 
@@ -94,10 +94,19 @@ const playerVS = (e) => {
 
 const botVS = (e) => {
 
-  upgradeBot(table, "X");
-  player.textContent = 'O';
+  switch (difficulty) {
+    case "easy":
+      easyBot(table, "X");
+      break;
+    case "hard":
+      upgradeBot(table, "X");
+      break;
+    default:
 
-  switchPlayer = !switchPlayer;
+  }
+
+  // player.textContent = 'O';
+  // switchPlayer = !switchPlayer;
 
   endOfGame();
 }
@@ -132,7 +141,7 @@ const reset = () => {
   table.forEach(row => {
     row.forEach(item => {
       item.textContent = "";
-      item.style.backgroundColor = "white";
+      item.classList.remove("bgGreen");
     });
   });
   document.querySelector('.result').classList.add('hidden');

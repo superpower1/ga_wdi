@@ -6,32 +6,102 @@
 
 body {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.player {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+body {
+  background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
+  background-size: 300% 300%;
+  -webkit-animation: Background 15s ease infinite;
+  -moz-animation: Background 15s ease infinite;
+  animation: Background 15s ease infinite;
+}
+@-webkit-keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 .container {
   margin: 0 auto;
-  width: 330px;
-  height: 330px;
+  width: 400px;
+  height: 400px;
   position: relative;
-  border: 1px solid black;
+  border: 1px solid white;
   box-sizing: content-box;
   padding: 5px;
   border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .table {
-  width: 330px;
-  height: 330px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.table div{
-  border: 1px solid black;
-  width: 100px;
-  height: 100px;
+.table div {
+  border: 1px solid white;
+  width: 32%;
+  height: 32%;
   border-radius: 20px;
-  margin: 5px;
+  margin: 0.66%;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 80px;
+  color: white;
+  padding: 2%;
+}
+
+.table div:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bgGreen {
+  background-color: lightgreen !important;
 }
 
 .result {
@@ -46,6 +116,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 20px;
 }
 
 .result div{
