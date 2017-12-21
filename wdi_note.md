@@ -56,4 +56,15 @@ binding.pry
 ```
 Allows you to pulse the program in the binding line, use `exit` to continue the program, if there are multiple bindings then the program will stop again at the next binding line
 
+### Sever
+* `gem install sinatra`
+.erb stands for embeded ruby (HTML)
+<% some ruby code which do not need to output strings %>
+<%= some ruby code with output strings %>
+* `gem install sinatra-reloader` and put `require 'sinatra/reloader'` in server.rb
+* query strings
+some_url?num=0&name="me"
 
+### Git
+1. `git checkout filename` to roll back any unstaged(git add but not commit) changes of file
+2. `git reset HEAD filename` to roll back any commited changes
