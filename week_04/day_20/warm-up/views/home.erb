@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/home.css">
+  </head>
+  <body>
+    <h1>Home</h1>
+    <%= erb(:navi)%>
+
+    <div class="temp">
+      <div>Title: <%= @title%></div>
+      <div>Temperature: <%= @temp%> &deg;C</div>
+      <div>Text: <%= @text%></div>
+      <div class="">
+        Desc: <%= @desc%>
+      </div>
+    </div>
+
+  </body>
+</html>
