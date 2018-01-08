@@ -64,6 +64,10 @@ Allows you to pulse the program in the binding line, use `exit` to continue the 
 * `gem install sinatra-reloader` and put `require 'sinatra/reloader'` in server.rb
 * query strings
 some_url?num=0&name="me"
+* `gem install sinatra_genertator`
+To start the server `ruby main.rb`
+In views folder we can create layout.erb as a template, sinatra will automatically look for layout.erb, if we don't want the layout in a particular page, in main.rb
+* `gem install httparty` let you pass url and make request in ruby
 
 ### Git
 1. `git checkout filename` to roll back any unstaged(git add but not commit) changes of file
