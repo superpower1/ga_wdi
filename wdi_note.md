@@ -56,7 +56,7 @@ binding.pry
 ```
 Allows you to pulse the program in the binding line, use `exit` to continue the program, if there are multiple bindings then the program will stop again at the next binding line
 
-### Sever
+### Sinatra
 * `gem install sinatra`
 .erb stands for embeded ruby (HTML)
 <% some ruby code which do not need to output strings %>
@@ -65,10 +65,21 @@ Allows you to pulse the program in the binding line, use `exit` to continue the 
 * query strings
 some_url?num=0&name="me"
 * `gem install sinatra_genertator`
+To create an sinatra app `sinatra new name_of_project -va`
 To start the server `ruby main.rb`
 In views folder we can create layout.erb as a template, sinatra will automatically look for layout.erb, if we don't want the layout in a particular page, in main.rb
 * `gem install httparty` let you pass url and make request in ruby
+*  Get current route in Sinatra
+```
+request.path_info   # => '/hello-world'
+request.fullpath    # => '/hello-world?foo=bar'
+request.url         # => 'http://example.com/hello-world?foo=bar'
+```
 
 ### Git
 1. `git checkout filename` to roll back any unstaged(git add but not commit) changes of file
 2. `git reset HEAD filename` to roll back any commited changes
+
+### Class in Ruby
+* Class name in ruby should be Camel case starts with Capital
+* @instance_variable
