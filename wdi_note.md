@@ -83,3 +83,18 @@ request.url         # => 'http://example.com/hello-world?foo=bar'
 ### Class in Ruby
 * Class name in ruby should be Camel case starts with Capital
 * @instance_variable
+
+### PostgreSQL
+* Support slash command and SQL command
+* `\l` to list all the databases
+* `\c database_name` to connect to database
+* `\?` to see all the slash command
+* `\dt` stands for 'describe table' to show all the tables
+* `\q` to quit the CLI
+* Create table
+```
+CREATE TABLE contacts (
+id SERIAL PRIMARY KEY,
+email VARCHAR(255)
+);
+```
