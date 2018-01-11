@@ -1,0 +1,8 @@
+<h1>Goofood</h1>
+<% @result.each do |dish| %>
+  <div class="dish-box">
+    <h2><%= dish['name'] %></h2>
+    <img src="<%= dish['img_url'] %>" alt="">
+    <a href="/dishes/6"></a>
+  </div>
+<% end %>

@@ -1,0 +1,31 @@
+<h1>Goofood Database</h1>
+
+<table class="dish-list">
+  <thead>
+    <tr>
+      <td>id</td>
+      <td>Name</td>
+      <td>Image URL</td>
+      <td>Location</td>
+      <td>Author</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @result.each do |dish| %>
+      <tr>
+        <% dish.each do |key, value| %>
+          <% if value %>
+              <td><%= value %></td>
+            <% else %>
+              <td>N/A</td>
+          <% end %>
+        <% end %>
+        <td>
+          <form class="" action="/dishes/<%= dish['id'] %>/delete" method="post">
+            <button type="submit" name="button">Delete</button>
+          </form>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

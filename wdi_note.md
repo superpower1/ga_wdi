@@ -83,6 +83,7 @@ request.url         # => 'http://example.com/hello-world?foo=bar'
 ### Class in Ruby
 * Class name in ruby should be Camel case starts with Capital
 * @instance_variable
+* @@class_variable
 
 ### PostgreSQL
 * Support slash command and SQL command
@@ -98,3 +99,11 @@ id SERIAL PRIMARY KEY,
 email VARCHAR(255)
 );
 ```
+* Go into the database directly from terminal, `psql database_name` (You should have your database created already)
+* Install PG `gem install pg` to allow you get data from database (PG is a gem design for using PostgreSQL)
+use `conn = PG.connect(dbname: 'database_name')` to connect
+use `result = conn.exec("SQL QUERY")` will return a hash
+
+### Http Method
+* get is a method for getting data from server (Should not have any side effect on server side)
+* post is a method to make changes to server data
