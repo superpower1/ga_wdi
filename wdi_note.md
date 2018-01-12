@@ -103,7 +103,42 @@ email VARCHAR(255)
 * Install PG `gem install pg` to allow you get data from database (PG is a gem design for using PostgreSQL)
 use `conn = PG.connect(dbname: 'database_name')` to connect
 use `result = conn.exec("SQL QUERY")` will return a hash
+* `$ psql -d library < seed.sql` to automatically run all the sql command in the file
 
 ### Http Method
 * get is a method for getting data from server (Should not have any side effect on server side)
 * post is a method to make changes to server data
+
+### Object relational mapping (ORM)
+Each table is an class and each record is a object
+* `gem install activerecord` and in ruby file `require 'active_record'`
+1. Create 'models' folder and create a ruby file that match the name of your table
+2. In the ruby file
+```
+class Dishes < ActiveRecord::Base
+end
+```
+3. In the main ruby file
+```
+require 'active_record'
+require_relative 'models/dishes'
+
+options = {
+adapter: 'postgresql',
+database: 'database_name',
+username: 'superpower1'
+}
+
+ActiveRecord::Base.establish_connection(options)
+```
+4. Class methods:
+    * `ClassName.first` returns the first object (record)
+    * `ClassName.count` returns the number of records
+    * Add a new record to database
+        `d1 = ClassName.new` create a new object
+        `d1.name = some_name`
+        `d1.save` save the new record to database
+        OR `ClassName.create(name:'some_name')`
+    * Delete a record
+        `d1 = ClassName.last`
+        `d1.delete` 
