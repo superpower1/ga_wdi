@@ -131,7 +131,7 @@ username: 'superpower1'
 
 ActiveRecord::Base.establish_connection(options)
 ```
-4. Class methods:
+4. ActiveRecord methods:
     * `ClassName.first` returns the first object (record)
     * `ClassName.count` returns the number of records
     * Add a new record to database
@@ -141,4 +141,10 @@ ActiveRecord::Base.establish_connection(options)
         OR `ClassName.create(name:'some_name')`
     * Delete a record
         `d1 = ClassName.last`
-        `d1.delete` 
+        `d1.delete`
+    * Reading from database
+        `ClassName.find(id)` find record by id
+        `ClassName.find_by(name: 'some_name')` find a singel record by name (returns a single object)
+        `ClassName.all` returns an array of all objects
+    * Translate to sql command
+        `ClassName.any_method.to_sql`

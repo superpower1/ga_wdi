@@ -1,0 +1,7 @@
+<h1>hello world</h1>
+<a href="/dishes/new">Add a new dish</a>
+<ul>
+  <% @dishes.each do |dish| %>
+    <li><a href="/dishes/<%= dish.id %>"><%= dish.name %></a></li>
+  <% end %>
+</ul>

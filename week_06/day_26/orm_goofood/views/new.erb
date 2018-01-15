@@ -1,0 +1,12 @@
+<form class="" action="/dishes" method="post">
+  <label for="name">Name:</label>
+  <input type="text" name="name" value="">
+  <label for="img_url">Image URL:</label>
+  <input type="text" name="img_url" value="">
+  <select class="" name="type">
+    <% @types.each do |type| %>
+      <option value="<%= type.id %>"><%= type.name %></option>
+    <% end %>
+  </select>
+  <button type="submit" name="button">Add</button>
+</form>
