@@ -19,3 +19,9 @@ INSERT INTO dish_types(name) VALUES ('soup');
 INSERT INTO dish_types(name) VALUES ('main course');
 INSERT INTO dish_types(name) VALUES ('entree');
 INSERT INTO dish_types(name) VALUES ('side');
+
+CREATE TABLE users(
+  id SERIAL PRIMARY KEY,
+  email VARCHAR(300) NOT NULL,
+  password_digest VARCHAR(400)
+);

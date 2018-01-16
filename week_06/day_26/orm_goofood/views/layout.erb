@@ -7,7 +7,21 @@
 </head>
 <body>
 
-  <%= yield %>
+  <% if logged_in? %>
+    <span>Hello, <%= current_user.email %></span>
+    <form class="" action="/session" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <button type="submit" name="button">Logout</button>
+    </form>
+  <% else %>
+      <a href="/login">Login</a>
+  <% end %>
+
+
+  <main>
+    <%= yield %>
+  </main>
+
 
 </body>
 </html>

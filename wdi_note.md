@@ -148,3 +148,4 @@ ActiveRecord::Base.establish_connection(options)
         `ClassName.all` returns an array of all objects
     * Translate to sql command
         `ClassName.any_method.to_sql`
+    * Difference between `find(some_id)` and `find_by(id: some_id)` is that if id is not found, find will through an exception but find_by will return nil
