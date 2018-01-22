@@ -1,0 +1,23 @@
+<h1><%= @dish.name %></h1>
+<h2><%= @type.name %></h2>
+<img src="<%= @dish.img_url %>" alt="">
+
+<a href="/dishes/<%=@dish.id%>/edit">Edit this dish</a>
+
+<form class="" action="/dishes/<%= @dish.id %>" method="post">
+  <!-- This is not shown on screen but send method type to server, put "_method" in name tag and "delete" in value tag, this is a feature of sinatra and rails -->
+  <input type="hidden" name="_method" value="delete">
+  <button type="submit" name="button">Delete</button>
+</form>
+
+<ul>
+  <% @comments.each do |comment| %>
+    <li><%= comment.body %></li>
+  <% end %>
+</ul>
+
+<form class="" action="/comments" method="post">
+  <input type="hidden" name="dish_id" value="<%= @dish.id %>">
+  <textarea name="comment" rows="8" cols="80"></textarea>
+  <button type="submit" name="button">Post Comment</button>
+</form>

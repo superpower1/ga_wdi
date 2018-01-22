@@ -149,3 +149,21 @@ ActiveRecord::Base.establish_connection(options)
     * Translate to sql command
         `ClassName.any_method.to_sql`
     * Difference between `find(some_id)` and `find_by(id: some_id)` is that if id is not found, find will through an exception but find_by will return nil
+    * Validation
+        `validates :name, presence: true, length: {in: 6..10}`
+        
+5. Rails
+    * Create new rails app
+        `$ rails new app_name -d=postgresql -GT` G skips git repository, T skips test
+    * Convention:
+        1. To generate a model, a controller and a migration file:
+        `$ rails generate resource product name:string description:text`
+        2. Use a model generator to generate: a model and a migration file:
+        `$ rails generate model product name:string description:text`
+        3. To delete
+        `$ rails destroy ...`
+    * `$ rails console` to open rails console
+    * Database
+    1. `$ rails db:create` to create a database
+    2. `$ rails db:migrate` to change database with migration file
+    3. 

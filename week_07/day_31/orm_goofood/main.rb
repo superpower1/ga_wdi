@@ -45,12 +45,17 @@ get '/dishes/:id/edit' do
 end
 
 post '/dishes' do
-  Dishes.create(
-    name: params[:name],
-    img_url: params[:img_url],
-    dish_type: params[:type]
-  )
-  redirect '/'
+  @dish = Dishes.new
+  @dish.name = params[:name]
+  @dish.img_url = params[:img_url]
+  @dish.dish_type = params[:type]
+
+  if @dish.save
+    redirect '/'
+  else
+    @types = DishTypes.all
+    erb :new
+  end
 end
 
 delete '/dishes/:id' do
