@@ -1,0 +1,23 @@
+body {
+  background-color: azure;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 50%;
+}
+
+.project img {
+  /* To remove space under image */
+  display: block;
+}
+
+@media (min-width: 700px) {
+  .project {
+    width: 25%;
+  }
+}

@@ -154,16 +154,21 @@ ActiveRecord::Base.establish_connection(options)
         
 5. Rails
     * Create new rails app
-        `$ rails new app_name -d=postgresql -GT` G skips git repository, T skips test
+        `$ rails new app_name -d=postgresql -GT --skip-coffee` G skips git repository, T skips test
     * Convention:
+        1. Controller name: pages_controller.rb
+        2. Views folder name: pages
+        3. Model filename is always singular: page.rb
+    * Basic command
         1. To generate a model, a controller and a migration file:
         `$ rails generate resource product name:string description:text`
-        2. Use a model generator to generate: a model and a migration file:
-        `$ rails generate model product name:string description:text`
+        2. To generate a model and a migration file:
+        `$ rails generate model product name:string description:text` (`$ rails g ...` for short)
         3. To delete
         `$ rails destroy ...`
-    * `$ rails console` to open rails console
+    * `$ rails console` to open rails console (`$ rails c` for short)
+    * `$ rails server` to run the app (`$ rails s` for short)
     * Database
     1. `$ rails db:create` to create a database
     2. `$ rails db:migrate` to change database with migration file
-    3. 
+    3.
