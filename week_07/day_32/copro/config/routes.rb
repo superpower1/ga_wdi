@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   get '/login', to: 'session#new'
   post '/session', to: 'session#create'
 
-  resources :projects
+  # Use 'only' to generate route only for 'new' and 'create'
+  resources :projects, only: [:new, :create, :show]
   resources :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 

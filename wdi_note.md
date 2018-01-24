@@ -164,11 +164,37 @@ ActiveRecord::Base.establish_connection(options)
         `$ rails generate resource product name:string description:text`
         2. To generate a model and a migration file:
         `$ rails generate model product name:string description:text` (`$ rails g ...` for short)
-        3. To delete
+        3. To generate a migration file:
+        `$ rails generate migration ...`
+        4. To delete
         `$ rails destroy ...`
     * `$ rails console` to open rails console (`$ rails c` for short)
     * `$ rails server` to run the app (`$ rails s` for short)
     * Database
     1. `$ rails db:create` to create a database
     2. `$ rails db:migrate` to change database with migration file
-    3.
+    
+6. AWS S3
+    1. In 'preview_uploader.rb', change `storage :file` to `storage :fog`
+    2. In 'config>initializers', create a new file called 'fog.rb', inside this file, put:
+    ```
+    CarrierWave.configure do |config|
+        config.fog_provider = 'fog/aws'
+        config.fog_credentials = {
+            provider:              'AWS',
+            aws_access_key_id:     ENV['S3_KEY'],
+            aws_secret_access_key: ENV['S3_SECRET'],
+            region:                'us-west-1'
+        }
+        config.fog_directory  = 'copro-sp1'
+    end
+    ```
+    3. Inside '.bash_profile' file, put:
+    ```
+    export S3_KEY=some_key_id
+    export S3_SECRET=some_secret_key
+    ```
+    4. Add a new gem to 'Gemfile' `gem 'fog-aws'`
+    5. Create a bucket on AWS S3 and create a user, create a user group with permissions, add this user to the user group
+    
+
