@@ -12,14 +12,15 @@ User.delete_all
 user = User.new
 user.email = 'haofu@sp1.com'
 user.password = '123456'
+user.name = 'superpower1'
 user.save
 
-arr1 = ['red', 'blue', 'yellow', 'black']
-arr2 = ['sky', 'ocean', 'sun', 'mountain']
-
-10.times do
-  Project.create(
-    title: "#{arr1.sample} #{arr2.sample}",
-    user_id: user.id
-  )
-end
+# arr1 = ['red', 'blue', 'yellow', 'black']
+# arr2 = ['sky', 'ocean', 'sun', 'mountain']
+#
+# 10.times do
+#   Project.create(
+#     title: "#{arr1.sample} #{arr2.sample}",
+#     user_id: user.id
+#   )
+# end

@@ -1,14 +1,17 @@
-<h1>Hello world</h1>
+<h1>Copro</h1>
+<a href="/projects/new">Add project</a>
 
 <div class="container">
   <% @projects.each do |project| %>
     <div class="project">
-      <a href="">
+
+      <a href="/projects/<%= project.id %>">
+        <div class="">
+          <%= project.title %>
+        </div>
         <img src="<%= project.preview.url %>" alt="">
       </a>
-      <div class="">
-        <%= project.title %>
-      </div>
+
     </div>
   <% end %>
 </div>

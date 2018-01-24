@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :comments
   root to: 'pages#home'
   get '/login', to: 'session#new'
+  delete '/logout', to: 'session#destroy'
   post '/session', to: 'session#create'
 
   # Use 'only' to generate route only for 'new' and 'create'

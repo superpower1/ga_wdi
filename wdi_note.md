@@ -164,8 +164,8 @@ ActiveRecord::Base.establish_connection(options)
         `$ rails generate resource product name:string description:text`
         2. To generate a model and a migration file:
         `$ rails generate model product name:string description:text` (`$ rails g ...` for short)
-        3. To generate a migration file:
-        `$ rails generate migration ...`
+        3. To generate a migration file: (Below command means add a new column called 'avatar' to 'users' table)
+        `$ rails g migration add_avatar_to_users avatar:string`
         4. To delete
         `$ rails destroy ...`
     * `$ rails console` to open rails console (`$ rails c` for short)

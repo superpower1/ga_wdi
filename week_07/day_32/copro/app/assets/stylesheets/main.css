@@ -16,8 +16,19 @@ body {
   display: block;
 }
 
+.comments {
+  border-top: 1px solid black; 
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
 @media (min-width: 700px) {
   .project {
     width: 25%;
   }
+}
+
+.project-details img {
+  width: 400px;
+  height: 300px;
 }

@@ -9,7 +9,20 @@
   </head>
 
   <body>
-    <%= session[:user_id] %>
+    <nav>
+      <a href="/">Home</a>
+    </nav>
+    <% if session[:user_id] %>
+      Hello, <%= current_user.name %>
+      <form class="" action="/logout" method="post">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" name="button">Logout</button>
+      </form>
+    <% else %>
+      <a href="/login">Login</a>
+      <a href="/users/new">Signup</a>
+    <% end %>
     <%= yield %>
   </body>
 </html>

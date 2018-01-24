@@ -950,3 +950,1405 @@ Processing by Rails::InfoController#routes as */*
 Completed 200 OK in 13ms (Views: 3.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-01-24 16:29:40 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (18.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (106.8ms)
+Completed 200 OK in 543ms (Views: 423.7ms | ActiveRecord: 68.9ms)
+
+
+Started GET "/projects/" for 127.0.0.1 at 2018-01-24 16:29:48 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/projects"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/projects/" for 127.0.0.1 at 2018-01-24 16:29:58 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/projects"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rails/info/routes?path=/" for 127.0.0.1 at 2018-01-24 16:30:07 +1100
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/"}
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/pr" for 127.0.0.1 at 2018-01-24 16:30:08 +1100
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/pr"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 16:31:57 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 553ms (Views: 524.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/projects/" for 127.0.0.1 at 2018-01-24 16:32:00 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/projects"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rails/info/routes?path=/" for 127.0.0.1 at 2018-01-24 16:32:13 +1100
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/"}
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/p" for 127.0.0.1 at 2018-01-24 16:32:13 +1100
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/p"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/" for 127.0.0.1 at 2018-01-24 16:33:48 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/projects"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/projects/" for 127.0.0.1 at 2018-01-24 16:33:52 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/projects"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/projects/" for 127.0.0.1 at 2018-01-24 16:34:52 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/projects"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-01-24 16:35:25 +1100
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (68.7ms)
+Completed 200 OK in 752ms (Views: 701.7ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-01-24 16:35:28 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (2.8ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (29.2ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 3.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <h2><%= @project.title %></h2>
+    2: 
+    3: <img src="<%= @project.preview.url %>" alt="">
+  
+app/views/projects/show.html.erb:1:in `_app_views_projects_show_html_erb__3217699315284456103_70301751810180'
+Started GET "/projects/1" for 127.0.0.1 at 2018-01-24 16:36:03 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (58.6ms)
+Completed 500 Internal Server Error in 221ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <h2><%= @project.title %></h2>
+    2: 
+    3: <img src="<%= @project.preview.url %>" alt="">
+  
+app/views/projects/show.html.erb:1:in `_app_views_projects_show_html_erb__3217699315284456103_70301804513900'
+Started GET "/" for 127.0.0.1 at 2018-01-24 16:36:14 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 47ms (Views: 42.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects/27" for 127.0.0.1 at 2018-01-24 16:36:16 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 52ms (Views: 44.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/11" for 127.0.0.1 at 2018-01-24 16:37:08 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 147ms (Views: 140.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/projects/24" for 127.0.0.1 at 2018-01-24 16:37:12 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 61ms (Views: 53.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects/25" for 127.0.0.1 at 2018-01-24 16:37:14 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 49ms (Views: 41.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/projects/18" for 127.0.0.1 at 2018-01-24 16:37:17 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 36.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/projects/27" for 127.0.0.1 at 2018-01-24 16:39:49 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mProject Load (1.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 948ms (Views: 891.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/projects/27" for 127.0.0.1 at 2018-01-24 16:39:55 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 65ms (Views: 59.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 16:40:34 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (1.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 129ms (Views: 115.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/projects/27" for 127.0.0.1 at 2018-01-24 16:40:36 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mProject Load (1.7ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 118ms (Views: 105.2ms | ActiveRecord: 1.7ms)
+
+
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5490135169876955430)[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateComments (20180124054250)
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (74.2ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "user_id" integer, "project_id" integer, "body" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (4.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180124054250"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5490135169876955430)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/rails/info" for 127.0.0.1 at 2018-01-24 16:46:45 +1100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-01-24 16:46:45 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/railties-5.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [22 times] (17.6ms)
+  Rendered /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.6ms)
+  Rendered /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/railties-5.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (52.7ms)
+Completed 200 OK in 90ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/c" for 127.0.0.1 at 2018-01-24 16:46:51 +1100
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/c"}
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 16:57:44 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (2.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (52.5ms)
+Completed 200 OK in 1489ms (Views: 1450.0ms | ActiveRecord: 20.6ms)
+
+
+Started GET "/projects/27" for 127.0.0.1 at 2018-01-24 16:57:52 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (13.9ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."project_id" = $1 LIMIT $2[0m  [["project_id", 27], ["LIMIT", 11]]
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."project_id" = $1 LIMIT $2[0m  [["project_id", 27], ["LIMIT", 11]]
+  [1m[36mCACHE Comment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."project_id" = $1 LIMIT $2[0m  [["project_id", 27], ["LIMIT", 11]]
+  [1m[36mCACHE Comment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."project_id" = $1 LIMIT $2[0m  [["project_id", 27], ["LIMIT", 11]]
+  [1m[36mCACHE Comment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."project_id" = $1 LIMIT $2[0m  [["project_id", 27], ["LIMIT", 11]]
+  [1m[36mCACHE Comment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."project_id" = $1 LIMIT $2[0m  [["project_id", 27], ["LIMIT", 11]]
+  [1m[36mCACHE Comment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."project_id" = $1 LIMIT $2[0m  [["project_id", 27], ["LIMIT", 11]]
+  [1m[36mCACHE Comment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."project_id" = $1 LIMIT $2[0m  [["project_id", 27], ["LIMIT", 11]]
+  Rendered projects/show.html.erb within layouts/application (1075.3ms)
+Completed 500 Internal Server Error in 1174ms (ActiveRecord: 37.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comments' for #<#<Class:0x00007fafc55b2be8>:0x00007fafc9aeb4f8>
+Did you mean?  @comments):
+    10:     <button type="submit" name="button"></button>
+    11:   </form>
+    12:   <div>
+    13:     <% comments.each do |comment| %>
+    14:       <div>
+    15:         <%= comment.user_id %>
+    16:         <%= comment.body %>
+  
+app/views/projects/show.html.erb:13:in `_app_views_projects_show_html_erb___3971703381567959821_70196497481760'
+Started GET "/projects/27" for 127.0.0.1 at 2018-01-24 16:58:21 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mProject Load (1.8ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (5.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 27]]
+  Rendered projects/show.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 581ms (Views: 518.0ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/projects/27" for 127.0.0.1 at 2018-01-24 16:58:50 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mProject Load (1.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 27]]
+  Rendered projects/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 79ms (Views: 67.8ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 16:59:00 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"body"=>"This one is nice", "button"=>""}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.4) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.4) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.4) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.4) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-01-24 17:04:46 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (77.5ms)
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 952ms (ActiveRecord: 31.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<User:0x00007fafcb0a1f18>):
+     9:   </head>
+    10: 
+    11:   <body>
+    12:     <%= current_user.name %>
+    13:     <%= yield %>
+    14:   </body>
+    15: </html>
+  
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___819219809906686293_70196479090260'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5490135169876955430)[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddNameToUsers (20180124061230)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.8ms)[0m  [1m[35mALTER TABLE "users" ADD "name" character varying[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180124061230"]]
+  [1m[35m (12.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5490135169876955430)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[31mDELETE FROM "projects"[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "name") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "haofu@sp1.com"], ["password_digest", "$2a$10$efr96kEEFG8MB29tPVlQVu6I.l5dahNqCeCEh/SfhISkNFWA8CN8u"], ["created_at", "2018-01-24 06:13:56.005689"], ["updated_at", "2018-01-24 06:13:56.005689"], ["name", "superpower1"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2018-01-24 17:14:36 +1100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (2.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (28.0ms)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 1412ms (ActiveRecord: 20.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9:   </head>
+    10: 
+    11:   <body>
+    12:     <%= current_user.name %>
+    13:     <%= yield %>
+    14:   </body>
+    15: </html>
+  
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1879711525074322992_70100110796800'
+Started GET "/" for 127.0.0.1 at 2018-01-24 17:16:15 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (1.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (26.1ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 490ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    10: 
+    11:   <body>
+    12:     <%= if session[:user_id]
+    13:       current_user.name
+    14:     end %>
+    15:     <%= yield %>
+    16:   </body>
+  
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___1879711525074322992_70100143101320'
+Started GET "/" for 127.0.0.1 at 2018-01-24 17:18:57 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (1.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (17.1ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    10: 
+    11:   <body>
+    12:     <% if session[:user_id] %>
+    13:       <%= current_user.name %>
+    14:     <% end %>
+    15:     <%= yield %>
+    16:   </body>
+  
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___1879711525074322992_70100115750200'
+Started GET "/" for 127.0.0.1 at 2018-01-24 17:21:20 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (1.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 121ms (Views: 103.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 17:21:37 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 56ms (Views: 50.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 17:22:16 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 62ms (Views: 55.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-01-24 17:24:38 +1100
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 398ms (Views: 382.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info" for 127.0.0.1 at 2018-01-24 17:24:46 +1100
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-01-24 17:24:47 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/railties-5.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [22 times] (63.1ms)
+  Rendered /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (94.5ms)
+  Rendered /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/railties-5.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (205.0ms)
+Completed 200 OK in 249ms (Views: 236.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/" for 127.0.0.1 at 2018-01-24 17:24:50 +1100
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/"}
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/lo" for 127.0.0.1 at 2018-01-24 17:24:51 +1100
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/lo"}
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/l" for 127.0.0.1 at 2018-01-24 17:25:00 +1100
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/l"}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/" for 127.0.0.1 at 2018-01-24 17:25:03 +1100
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/"}
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 21:01:23 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (14.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (67.9ms)
+Completed 200 OK in 177ms (Views: 93.1ms | ActiveRecord: 57.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-01-24 21:01:27 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 66ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-01-24 21:01:42 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"authenticity_token"=>"qtal9mCAO1YLH44MV4VHYeWhYdlMj9GBR54uXNGdEZ8ETBLCuMvOaTa8DlcaVfcSQc3xf/KN9G3k0Yva67OGDQ==", "email"=>"haofu@sp1.com", "pwd"=>"superpower1", "button"=>""}
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "haofu@sp1.com"], ["LIMIT", 1]]
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 811ms (Views: 385.8ms | ActiveRecord: 44.2ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-01-24 21:01:51 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"authenticity_token"=>"4abuL5WbZDBqjjRDM1Ft6PQOb2kl0NkclBadDQ84yWRPPFkbTdCRD1cttBh+gd2bUGL/z5vS/PA3WTiLNRZe9g==", "email"=>"haofu@sp1.com", "pwd"=>"123456", "button"=>""}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "haofu@sp1.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 95ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 21:01:51 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (11.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 512ms (Views: 504.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 21:02:14 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (19.3ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 885ms (Views: 859.4ms | ActiveRecord: 3.1ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-01-24 21:02:18 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EXPYbnUryLd2QAsHaTPfm2Be8/2K7d7ZWTuoCwuer46/6W9arWA9iEvji1wk42/oxDJjWzTv+zX6dA2NMbA4HA==", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 21:02:18 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 269ms (Views: 264.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-01-24 21:02:21 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 66ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-01-24 21:02:34 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"authenticity_token"=>"HM5gruFBdlTew61DcHgdqmg4keaywkSSz3uJIrppv7KyVNeaOQqDa+NgLRg9qK3ZzFQBQAzAYX5sNCykgEcoIA==", "email"=>"haofu@sp1.com", "pwd"=>"123456", "button"=>""}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "haofu@sp1.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 241ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 21:02:34 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (15.3ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 124ms (Views: 112.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 21:04:12 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (2.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (25.4ms)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 585ms (Views: 538.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-01-24 21:04:15 +1100
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (9.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 307ms (Views: 300.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-01-24 21:04:35 +1100
+Processing by ProjectsController#create as HTML
+  Parameters: {"authenticity_token"=>"h7/Y/skBTO7E8wNV8iZxei3ronbSJh9m4/sIIR/K3MUpJW/KEUq50flQgw6/9sEJiYcy0GwkOopAtK2nJeRLVw==", "title"=>"project1", "preview"=>#<ActionDispatch::Http::UploadedFile:0x00007f82e8ed4d98 @tempfile=#<Tempfile:/var/folders/65/0d2639l94kbg2rd4wl_1891m0000gp/T/RackMultipart20180124-24939-1b3ffd0.jpg>, @original_filename="1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"preview\"; filename=\"1.jpg\"\r\nContent-Type: image/jpeg\r\n">, "button"=>""}
+  [1m[35m (18.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (24.4ms)[0m  [1m[32mINSERT INTO "projects" ("title", "user_id", "created_at", "updated_at", "preview") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "project1"], ["user_id", 4], ["created_at", "2018-01-24 10:04:35.511428"], ["updated_at", "2018-01-24 10:04:35.511428"], ["preview", "1.jpg"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3002ms (ActiveRecord: 56.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 21:04:38 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (9.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 231ms (Views: 224.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 21:04:43 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (2.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  Rendered projects/show.html.erb within layouts/application (16.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 317ms (Views: 276.4ms | ActiveRecord: 8.3ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 21:04:54 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"893V8Zvvu8i/UMER1/zuxwL1LbpQNETWEhBX8Cz0ev9dR2LFQ6RO94LzQUqaLF60ppm9HO42YTqxX/J2FtrtbQ==", "body"=>"This one is good", "button"=>""}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (12.4ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["body", "This one is good"], ["created_at", "2018-01-24 10:04:54.662201"], ["updated_at", "2018-01-24 10:04:54.662201"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (21.5ms)
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 23.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: 
+    2: <div class="project-details">
+    3:   <h2><%= @project.title %></h2>
+    4:   <img src="<%= @project.preview.url %>" alt="">
+    5: </div>
+    6: 
+  
+app/views/projects/show.html.erb:3:in `_app_views_projects_show_html_erb__3504408496395898946_70100159502540'
+app/controllers/comments_controller.rb:10:in `create'
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 21:09:16 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"893V8Zvvu8i/UMER1/zuxwL1LbpQNETWEhBX8Cz0ev9dR2LFQ6RO94LzQUqaLF60ppm9HO42YTqxX/J2FtrtbQ==", "body"=>"This one is good", "button"=>""}
+Redirected to http://localhost:3000/projects/show
+Completed 302 Found in 460ms (ActiveRecord: 19.6ms)
+
+
+Started GET "/projects/show" for 127.0.0.1 at 2018-01-24 21:09:17 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 5.0ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/projects_controller.rb:22:in `show'
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 21:12:45 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"893V8Zvvu8i/UMER1/zuxwL1LbpQNETWEhBX8Cz0ev9dR2LFQ6RO94LzQUqaLF60ppm9HO42YTqxX/J2FtrtbQ==", "body"=>"This one is good", "button"=>""}
+Redirected to 
+Completed 500 Internal Server Error in 736ms (ActiveRecord: 17.1ms)
+
+
+  
+NoMethodError (undefined method `back_url' for #<CommentsController:0x00007f82eda1aaf0>):
+  
+app/controllers/comments_controller.rb:9:in `create'
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 21:15:47 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"893V8Zvvu8i/UMER1/zuxwL1LbpQNETWEhBX8Cz0ev9dR2LFQ6RO94LzQUqaLF60ppm9HO42YTqxX/J2FtrtbQ==", "body"=>"This one is good", "button"=>""}
+Redirected to 
+Completed 500 Internal Server Error in 290ms (ActiveRecord: 55.9ms)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/comments_controller.rb:9:in `create'
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 21:16:05 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"893V8Zvvu8i/UMER1/zuxwL1LbpQNETWEhBX8Cz0ev9dR2LFQ6RO94LzQUqaLF60ppm9HO42YTqxX/J2FtrtbQ==", "body"=>"This one is good", "button"=>""}
+Redirected to 
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/comments_controller.rb:9:in `create'
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 21:16:48 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"893V8Zvvu8i/UMER1/zuxwL1LbpQNETWEhBX8Cz0ev9dR2LFQ6RO94LzQUqaLF60ppm9HO42YTqxX/J2FtrtbQ==", "body"=>"This one is good", "button"=>""}
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 91.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/comments_controller.rb:9:in `create'
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 21:17:28 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (11.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (7.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  Rendered projects/show.html.erb within layouts/application (29.3ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 1080ms (Views: 668.3ms | ActiveRecord: 58.5ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 21:17:36 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"eyTUn5iMs4eggLY7y3C5UWLEEOVamJ6Sdq1qncDbL53VvmOrQMdGuJ0jNmCGoAkixqiAQ+Sau37V4s8b+vW4Dw==", "body"=>"Good", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 146ms (ActiveRecord: 15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 21:17:36 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (34.1ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 793ms (Views: 782.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 21:18:38 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (1.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  Rendered projects/show.html.erb within layouts/application (16.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 598ms (Views: 404.9ms | ActiveRecord: 49.3ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 21:18:44 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"YEzI5HLolr2NMjzr0NqsHAsCGCN4U8DZoMkwq7TqRJrO1n/QqqNjgrCRvLCdChxvr26IhcZR5TUDhpUtjsTTCA==", "body"=>"good", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 21:18:44 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 58.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 21:19:02 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  Rendered projects/show.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 265ms (Views: 254.3ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 21:19:06 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"FVcBSHp8f0vYLTVJQEQSTEi1roQSdQy8rs+oaUC1c/i7zbZ8ojeKdOWOtRINlKI/7Nk+Iqx3KVANgA3vepvkag==", "body"=>"asd", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 21:19:06 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 59ms (Views: 52.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 21:19:52 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  Rendered projects/show.html.erb within layouts/application (8.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 209ms (Views: 98.6ms | ActiveRecord: 35.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 21:20:51 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (42.9ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 320ms (Views: 229.4ms | ActiveRecord: 72.5ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 21:20:54 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (2.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  Rendered projects/show.html.erb within layouts/application (9.3ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 63.2ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 21:20:57 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"2AE+f2lkBqOa4TvVeImtO6VWyCb90Iwzqs8KyFfRnGp2m4lLsS/znKdCu441WR1IATpYgEPSqd8JgK9Obf8L+A==", "body"=>"123", "button"=>""}
+Redirected to http://localhost:3000/projects/
+Completed 302 Found in 23ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/projects/" for 127.0.0.1 at 2018-01-24 21:20:57 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/projects"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rails/info" for 127.0.0.1 at 2018-01-24 21:23:03 +1100
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 29ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-01-24 21:23:03 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/railties-5.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [23 times] (73.9ms)
+  Rendered /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.8ms)
+  Rendered /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/railties-5.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (141.7ms)
+Completed 200 OK in 202ms (Views: 174.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 21:25:14 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (3.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (58.5ms)
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 657ms (Views: 621.7ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 21:25:16 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (1.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  Rendered projects/show.html.erb within layouts/application (7.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 641ms (Views: 628.0ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 21:25:20 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"nVVGIomeDvLXX8VGqhskbtzlMponNkYLxTvLOqNPlAYzz/EWUdX7zer8RR3ny5QdeImiPJk0Y+dmdG68mWEDlA==", "project_id"=>"28", "body"=>"123", "button"=>""}
+Redirected to http://localhost:3000/projects/28
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 21:25:20 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  Rendered projects/show.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 264ms (Views: 249.4ms | ActiveRecord: 1.5ms)
+
+
+  [1m[36mProject Load (5.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "comments" ON "comments"."project_id" = "projects"."id"[0m
+  [1m[36mProject Load (4.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "comments" ON "comments"."project_id" = "projects"."id"[0m
+  [1m[35m (8.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (5.6ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "project_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 4], ["project_id", 28], ["body", "good"], ["created_at", "2018-01-24 10:50:06.066947"], ["updated_at", "2018-01-24 10:50:06.066947"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "comments" ON "comments"."project_id" = "projects"."id"[0m
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 21:55:02 +1100
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (4.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" INNER JOIN "comments" ON "comments"."project_id" = "projects"."id" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered projects/show.html.erb within layouts/application (222.5ms)
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 1673ms (Views: 1370.1ms | ActiveRecord: 82.7ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 21:55:19 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"XXYy/STf9O/3/q7psA5xfL4fN8MiOv/AAyDAnwi8vALz7IXJ/JQB0MpdLrL93sEPGnOnZZw42iygb2UZMpIrkA==", "project_id"=>"28", "body"=>"I like this one", "button"=>""}
+Redirected to http://localhost:3000/projects/28
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 21:55:19 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" INNER JOIN "comments" ON "comments"."project_id" = "projects"."id" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered projects/show.html.erb within layouts/application (23.6ms)
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 409ms (Views: 398.5ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 21:56:38 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"n7FKs0jcx5XTWJCSOVs9GQxJ3V42ZpXin4F7Y57aIO0xK/2HkJcyqu77EMl0i41qqCVN+IhksA48zt7lpPS3fw==", "project_id"=>"28", "body"=>"i like this", "button"=>""}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (2.4ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "project_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 4], ["project_id", 28], ["body", "i like this"], ["created_at", "2018-01-24 10:56:39.515103"], ["updated_at", "2018-01-24 10:56:39.515103"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/projects/28
+Completed 302 Found in 252ms (ActiveRecord: 50.1ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 21:56:39 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (1.8ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" INNER JOIN "comments" ON "comments"."project_id" = "projects"."id" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered projects/show.html.erb within layouts/application (27.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 499ms (Views: 476.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 22:36:43 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (24.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" INNER JOIN "comments" ON "comments"."project_id" = "projects"."id" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered projects/show.html.erb within layouts/application (60.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 462ms (Views: 274.7ms | ActiveRecord: 26.1ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 22:40:11 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (7.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" INNER JOIN "comments" ON "comments"."project_id" = "projects"."id" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (1.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered projects/show.html.erb within layouts/application (43.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 968ms (Views: 912.2ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 22:40:43 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (2.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" INNER JOIN "comments" ON "comments"."project_id" = "projects"."id" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered projects/show.html.erb within layouts/application (62.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 794ms (Views: 723.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/rails/info" for 127.0.0.1 at 2018-01-24 22:47:33 +1100
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 29ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-01-24 22:47:33 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/railties-5.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [23 times] (65.6ms)
+  Rendered /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (36.2ms)
+  Rendered /Users/superpower1/.rvm/gems/ruby-2.4.3/gems/railties-5.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (234.4ms)
+Completed 200 OK in 289ms (Views: 273.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/u" for 127.0.0.1 at 2018-01-24 22:47:44 +1100
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/u"}
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/u" for 127.0.0.1 at 2018-01-24 22:47:44 +1100
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/u"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/user" for 127.0.0.1 at 2018-01-24 22:47:46 +1100
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/user"}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 23:03:57 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (2.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (161.3ms)
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 673ms (Views: 519.7ms | ActiveRecord: 95.5ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-01-24 23:04:03 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7i4AsxNnJ1TevWYUmjhHi8Qajbmoq+vrSy7wRA09WuJAtLeHyyzSa+Me5k/X6Pf4YHYdHxapzgfoYVXCNxPNcA==", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 23:04:03 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 59ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-01-24 23:04:06 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 76ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-01-24 23:05:02 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"PmoqleH0YkB+Kb0bzBGx1pWZC3RErwYMxe7qweXhDk2Q8J2hOb+Xf0OKPUCBwQGlMfWb0vqtI+BmoU9H38+Z3w==", "name"=>"pop", "password"=>"[FILTERED]", "button"=>""}
+  [1m[35m (2.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (27.0ms)[0m  [1m[32mINSERT INTO "users" ("password_digest", "created_at", "updated_at", "name") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["password_digest", "$2a$10$s4r1Jv0/GxoAKPC/AsVSke891wGzUkMWQvx/B4wbdYsaZ.fHIIpT6"], ["created_at", "2018-01-24 12:05:02.309631"], ["updated_at", "2018-01-24 12:05:02.309631"], ["name", "pop"]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 241ms (ActiveRecord: 33.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 23:05:02 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (213.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 556ms (Views: 545.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-01-24 23:05:12 +1100
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (5.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 343ms (Views: 324.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-01-24 23:05:24 +1100
+Processing by ProjectsController#create as HTML
+  Parameters: {"authenticity_token"=>"hKOQiSxNcB68h68uo9m7cN+eio357mSZKkP6QYWHedAqOSe99AaFIYEkL3XuCQsDe/IaK0fsQXWJDF/Hv6nuQg==", "title"=>"project2", "preview"=>#<ActionDispatch::Http::UploadedFile:0x00007fa3f1b54720 @tempfile=#<Tempfile:/var/folders/65/0d2639l94kbg2rd4wl_1891m0000gp/T/RackMultipart20180124-29977-1ty2gh7.jpg>, @original_filename="2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"preview\"; filename=\"2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "button"=>""}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (13.3ms)[0m  [1m[32mINSERT INTO "projects" ("title", "user_id", "created_at", "updated_at", "preview") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "project2"], ["user_id", 5], ["created_at", "2018-01-24 12:05:24.107743"], ["updated_at", "2018-01-24 12:05:24.107743"], ["preview", "2.jpg"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1614ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 23:05:25 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (2.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (8.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 107ms (Views: 98.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 23:05:29 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (3.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" INNER JOIN "comments" ON "comments"."project_id" = "projects"."id" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered projects/show.html.erb within layouts/application (58.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 179ms (Views: 119.0ms | ActiveRecord: 26.8ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2018-01-24 23:05:43 +1100
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"cG5NevQeEgGys+VpotQDGm+213TQNoANTGxP/DaPSbbe9PpOLFXnPo8QZTLvBLNpy9pH0m40peHvI+p6DKHeJA==", "project_id"=>"28", "body"=>"Not good", "button"=>""}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (2.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "project_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 5], ["project_id", 28], ["body", "Not good"], ["created_at", "2018-01-24 12:05:43.693322"], ["updated_at", "2018-01-24 12:05:43.693322"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/projects/28
+Completed 302 Found in 70ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 23:05:43 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" INNER JOIN "comments" ON "comments"."project_id" = "projects"."id" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered projects/show.html.erb within layouts/application (11.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 106ms (Views: 91.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/projects/28" for 127.0.0.1 at 2018-01-24 23:07:24 +1100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mProject Load (4.7ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" INNER JOIN "comments" ON "comments"."project_id" = "projects"."id" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."project_id" = $1[0m  [["project_id", 28]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered projects/show.html.erb within layouts/application (28.7ms)
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 1080ms (Views: 1020.6ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-24 23:07:31 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 438ms (Views: 430.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-25 08:55:33 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mProject Load (16.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered pages/home.html.erb within layouts/application (563.2ms)
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 1190ms (Views: 1134.7ms | ActiveRecord: 19.9ms)
+
+
