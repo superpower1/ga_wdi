@@ -171,8 +171,12 @@ ActiveRecord::Base.establish_connection(options)
     * `$ rails console` to open rails console (`$ rails c` for short)
     * `$ rails server` to run the app (`$ rails s` for short)
     * Database
-    1. `$ rails db:create` to create a database
-    2. `$ rails db:migrate` to change database with migration file
+        1. `$ rails db:create` to create a database
+        2. `$ rails db:migrate` to change database with migration file
+    * One to many relationship
+    1. Add `has_many :comments` to parent model
+    2. Add `belongs_to :user` to child model
+    3. Then you can use `User.first.comments` to get comments belongs to the first user and `Comment.first.user` to get the user of that comment
     
 6. AWS S3
     1. In 'preview_uploader.rb', change `storage :file` to `storage :fog`

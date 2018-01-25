@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :likes
   resources :comments
   root to: 'pages#home'
   get '/login', to: 'session#new'

@@ -18,7 +18,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    @project = Project.joins(:comments).find_by(id: params[:id])
+    @project = Project.find_by(id: params[:id])
     # @comments = Comment.where(project_id: @project.id)
   end
 
