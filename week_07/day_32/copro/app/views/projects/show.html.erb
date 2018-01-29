@@ -8,7 +8,7 @@
 <form class="" action="/likes" method="post">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <input type="hidden" name="project_id" value="<%= @project.id %>">
-  <%= @project.likes.count %>
+  <span class="like-counter"><%= @project.likes.count %></span>
   <button type="submit" name="button">LIKE</button>
 </form>
 
@@ -31,6 +31,6 @@
 
 <script type="text/javascript">
   document.querySelector('.project-details span').addEventListener('click', event => {
-    console.log('like');
+    document.querySelector('.like-counter').textContent++;
   });
 </script>
