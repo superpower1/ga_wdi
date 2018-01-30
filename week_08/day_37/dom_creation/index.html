@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script
+     src="http://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+     crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <input type="text" class="lang-input" placeholder="Add a new Programming language">
+    <button type="button" name="button" class="add-btn">Add</button>
+    <div class="container"></div>
+    <script type="text/javascript">
+      const langs = ['Ruby', 'C++', 'PHP'];
+      // const container = document.querySelector('.container');
+      // container.addEventListener('click', e=>{
+      //   if (e.target.tagName === 'P') {
+      //     e.target.remove();
+      //   }
+      // })
+      // langs.forEach(lang=>{
+      //   const newPara = document.createElement('p');
+      //   newPara.textContent = lang;
+      //   container.appendChild(newPara);
+      // })
+      // document.querySelector('.add-btn').addEventListener('click', e=>{
+      //   const newPara = document.createElement('p');
+      //   newPara.textContent = document.querySelector('.lang-input').value;
+      //   container.appendChild(newPara);
+      // })
+
+      // jQuery version
+      // The second parameter is a css selector to match children
+      $('.container').on('click', 'p', e=>{
+          e.target.remove();
+      })
+      langs.forEach(lang=>{
+        const $p = $('<p>').text(lang);
+        $('.container').append($p);
+      })
+      $('.add-btn').on('click', e=>{
+        const inputValue = $('.lang-input').val();
+        const $p = $('<p>').text(inputValue);
+        $('.container').append($p);
+      })
+
+    </script>
+  </body>
+</html>
