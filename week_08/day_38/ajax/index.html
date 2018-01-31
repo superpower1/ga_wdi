@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="movies">
+
+    </div>
+    <script type="text/javascript">
+      const options = {
+        url: "http://www.omdbapi.com/?apikey=2f6435d9&s=jaws",
+        method: 'get'
+      }
+      $.ajax(options).done(res=>{
+        console.log(res.Search);
+        res.Search.forEach(movie=>{
+          const $li = $('<li>').text(movie.Title);
+          $('.movies').append($li);
+        })
+      })
+    </script>
+  </body>
+</html>
