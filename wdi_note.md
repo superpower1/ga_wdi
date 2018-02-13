@@ -1,3 +1,10 @@
+JS is a
+* single threased
+* non-blocking
+* asynchronous
+* concurrent
+programming language
+
 ### Primitives
 1. null
 2. undefined
@@ -46,7 +53,7 @@ p, puts, print
 puts will convert things to string, p (short for print) will print out details
 
 ### Pry
-repl stands for Read-Eval-Print Loop which means a eviroment that you can type in commands and see the result (like irb and pry for ruby and browser console for js)
+REPL stands for Read-Eval-Print Loop which means a eviroment that you can type in commands and see the result (like irb and pry for ruby and browser console for js)
 pry is a colorful ruby console (irb)
 ```
 require 'pry'
@@ -79,6 +86,11 @@ request.url         # => 'http://example.com/hello-world?foo=bar'
 ### Git
 1. `git checkout filename` to roll back any unstaged(git add but not commit) changes of file
 2. `git reset HEAD filename` to roll back any commited changes
+3. `git branch` to check all the branches
+4. `git branch branch_name` to create new branch
+5. `git checkout branch_name` to switch to that branch
+6. To merge current branch into master, you have to switch to master branch and `git merge branch_name`
+7. `git branch -d branch_name` to delete a branch
 
 ### Class in Ruby
 * Class name in ruby should be Camel case starts with Capital
@@ -151,10 +163,10 @@ ActiveRecord::Base.establish_connection(options)
     * Difference between `find(some_id)` and `find_by(id: some_id)` is that if id is not found, find will through an exception but find_by will return nil
     * Validation
         `validates :name, presence: true, length: {in: 6..10}`
-        
+
 5. Rails
     * Create new rails app
-        `$ rails new app_name -d=postgresql -GT --skip-coffee` G skips git repository, T skips test
+        `$ rails new app_name -d=postgresql -GT --skip-coffee --skip-turbolinks` G skips git repository, T skips test
     * Convention:
         1. Controller name: pages_controller.rb
         2. Views folder name: pages
@@ -177,7 +189,19 @@ ActiveRecord::Base.establish_connection(options)
     1. Add `has_many :comments` to parent model
     2. Add `belongs_to :user` to child model
     3. Then you can use `User.first.comments` to get comments belongs to the first user and `Comment.first.user` to get the user of that comment
-    
+    * Global helpers by default only work in views, if you want them to be access everywhere
+    ```
+    def method_name
+        ...
+    end
+    helper_method
+    ```
+    * Use helpers to write form (In this way, we don't need hidden input for method or authenticity key)
+    ```
+    <%= form_tag "/dishes", method: "post" %>
+    <% end %>
+    ```
+
 6. AWS S3
     1. In 'preview_uploader.rb', change `storage :file` to `storage :fog`
     2. In 'config>initializers', create a new file called 'fog.rb', inside this file, put:
@@ -201,4 +225,28 @@ ActiveRecord::Base.establish_connection(options)
     4. Add a new gem to 'Gemfile' `gem 'fog-aws'`
     5. Create a bucket on AWS S3 and create a user, create a user group with permissions, add this user to the user group
     
+7. Testing
+    1. `$ gem install minitest` and `$ gem install minitest-reporters`
+    2.
+    ```
+    require 'minitest/autorun'
+    require 'minitest/reporters'
+    
+    require_relative 'to_sentence'
+    
+    Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+    
+    class ToSentenceTest < Minitest::Test
+        def test_to_sentence
+            assert_equal "ruby, js and css", to_sentence(['ruby', 'js', 'css'])
+        end
+    end
+    ```
+
+8. Quiz
+    1. Enumerables
+        Collection that you can iterate over, like array, hash
+    2. Restful
+    3. MVC
+        MVC is designed to seprate the concern
 

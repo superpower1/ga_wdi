@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Spiner</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const spiner = sentence => {
+        return sentence.replace(/( |_)/g, '-').toLowerCase();
+      }
+      console.log(spiner("All Lowercase_Words Joined By_Dashes"));
+    </script>
+  </body>
+</html>

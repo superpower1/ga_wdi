@@ -6,3 +6,16 @@
   <button type="submit" name="button">Delete</button>
 </form>
 <img src="<%= @img_url %>" alt="">
+
+<textarea name="name" rows="8" cols="80" class="comment-input"></textarea>
+<button type="button" name="button" class="post-btn">post</button>
+<div class="comments">
+
+</div>
+
+<script type="text/javascript">
+  $('.post-btn').on('click', e=>{
+    console.log($('.comment-input').val());
+
+  })
+</script>
