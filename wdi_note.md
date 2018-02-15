@@ -249,4 +249,9 @@ ActiveRecord::Base.establish_connection(options)
     2. Restful
     3. MVC
         MVC is designed to seprate the concern
+        
+9. Third party node modules
+    1. Underscore.js is designed to use ruby methods in js
+    2. Lowdash
+
 
