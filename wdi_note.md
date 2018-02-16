@@ -253,5 +253,7 @@ ActiveRecord::Base.establish_connection(options)
 9. Third party node modules
     1. Underscore.js is designed to use ruby methods in js
     2. Lowdash
+    3. Express
+    * Installation `$ npm install -g express` to install it globally or `$ npm install --save-dev express` to install it locally. If you install it locally, add into package.json at `"scripts": {"start": "nodemon fileName.js"}`
 
 
