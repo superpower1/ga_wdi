@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <img src="http://openweathermap.org/img/w/<%= result.weather[0].icon + '.png' %>" alt="" class="weather-icon">
+    <div class="temp">
+      <%= result.main.temp %>
+    </div>
+    <div class="location">
+      <%= result.name %>
+    </div>
+
+
+
+    <script src="/js/main.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -255,5 +255,11 @@ ActiveRecord::Base.establish_connection(options)
     2. Lowdash
     3. Express
     * Installation `$ npm install -g express` to install it globally or `$ npm install --save-dev express` to install it locally. If you install it locally, add into package.json at `"scripts": {"start": "nodemon fileName.js"}`
+    
+10. Automation build tools (yourLatest.js -> babel.js -> forOldBrowsers.js)
+    * Tools: grunt, gulp, webpack
+    * Webpack
+    * Why use npm install dependency instead of using script tags
+        - Variable defined in js file from script tags will be global, use npm install and import will not have this problem
 
 
