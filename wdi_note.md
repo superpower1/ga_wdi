@@ -261,5 +261,46 @@ ActiveRecord::Base.establish_connection(options)
     * Webpack
     * Why use npm install dependency instead of using script tags
         - Variable defined in js file from script tags will be global, use npm install and import will not have this problem
+        
+11. This keyword Rules
+    1. default binding
+    ```
+    function doStuff(){
+        console.log(this); // global context - In browser is window
+    }
+    ```
+    2. implicit binding
+    ```
+    const boo = {
+        doStuff: function(){
+            console.log(this); // the boo object
+        }
+    }
+    const doThis = boo.doStuff;
+    doThis(); // this will refer to the global context
+    ```
+    3. explicit binding
+    ```
+    doThis.call(context) // this === context
+    boo.doStuff.call(context) // this === context
+    doThis.apply(context) // this === context
+    
+    Difference between apply and call:
+        theFunction.apply(context, arrayOfArgs)
+        theFunction.call(context, arg1, arg2, ...)
+    ```
+    4. hard binding
+    ```
+    const apple = {};
+    const doHardStuff = doStuff.bind(apple); // returns a new function
+    doHardStuff(); // this === apple
+    ```
+    5. puff magic - constructor functions
+    ```
+    function cat() {
+        this.name = 'mao';
+    }
+    const c1 = new cat();
+    ```
 
 
