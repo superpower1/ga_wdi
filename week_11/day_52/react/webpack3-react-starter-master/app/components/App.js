@@ -7,8 +7,17 @@ export default class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      numOfLikes: 0
+      numOfLikes: 0,
+      peeps: ['loading...']
     }
+  }
+
+  componentDidMount() {
+    fetch('http://localhost:5000/api/peeps')
+      .then(res=>res.json())
+      .then(res=>{
+        this.setState({peeps: res})
+      })
   }
 
   updateLikes() {
@@ -26,6 +35,11 @@ export default class App extends React.Component {
         <Slider startValue = '5' />
         <Like updateLikes = {this.updateLikes.bind(this)}/>
         <span>{this.state.numOfLikes}</span>
+        {
+          this.state.peeps.map((peep, index) => {
+            return <p key={index}>{peep}</p>
+          })
+        }
         <Peeper maxLength="30"/>
       </div>
     )

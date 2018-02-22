@@ -302,5 +302,12 @@ ActiveRecord::Base.establish_connection(options)
     }
     const c1 = new cat();
     ```
-
+    
+12. CSS framework
+    * MaterialUI
+    * Bootstrap
+    * SematicUI
+    
+13. CORS
+    *  `npm install cors`
 
