@@ -310,4 +310,25 @@ ActiveRecord::Base.establish_connection(options)
     
 13. CORS
     *  `npm install cors`
+    
+14. Testing
+    * Test-Driven development
+        Write test first and then write code to pass it
+    * Behavioural-Driven development
+        It's on the top of TDD, use different syntax, more like English
+    * RSpec
+        1. Installation: `$ gem i rspec`
+        2. Init: `$ rspec --init`
+        3. Inside 'spec' folder, create a folder called 'lib', inside 'lib', create test file that ends with '-spec', for example 'class_name_spec.rb'
+        4. Outside of 'spec' folder, create a folder called 'lib', inside 'lib', create class file 'class_name.rb'. It is the convention of Rspec, unless otherwise configured, rspec will look for classes in this folder
+        5. Sample rspec test file:
+        ```
+        require 'Classname'
+        
+        describe Classname do
+            it 'description' do
+                expect(Zombie.new.some_method).to eq(expect_return)
+            end
+        end
+        ```
 
