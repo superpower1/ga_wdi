@@ -311,7 +311,7 @@ ActiveRecord::Base.establish_connection(options)
 13. CORS
     *  `npm install cors`
     
-14. Testing
+14. Ruby Testing
     * Test-Driven development
         Write test first and then write code to pass it
     * Behavioural-Driven development
@@ -331,4 +331,9 @@ ActiveRecord::Base.establish_connection(options)
             end
         end
         ```
+    * Working with Rails
+        1. In 'Gemfile.rb' put `gem 'rspec-rails'` and run `$ bundle install`
+        2. Run `$ rails g rspec:install`
+        3. Open '.rspec' file and change '--require spec_helper' to '--require rails_helper'. YOu can add '--format documentation' for a better format
+        
 
